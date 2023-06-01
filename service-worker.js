@@ -3,7 +3,7 @@ var cacheFiles = [
     'index.html',
     'product.js',
     'petstore1.webmanifest',
-    'images/yarn.png',
+    'images/welcome.png',
     'images/icon-store-512.png'
 ];
 
