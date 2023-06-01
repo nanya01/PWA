@@ -5,14 +5,14 @@ var cacheFiles = [
     'petstore1.webmanifest',
     'images/yarn.png',
     'images/icon-store-512.png'
-]
+];
 
 self.addEventListener('install', (e)=>{
     console.log("[Service worker] Install");
     e.waitUntil(
-        caches.open(cacheName).then((cache)=>{
+        caches.open(cacheName).then((cache) =>{
             console.log("[Service Worker] Caching all the files");
-            return cache.addAll(cacheFiles)
+            return cache.addAll(cacheFiles);
         })
     )
 })
